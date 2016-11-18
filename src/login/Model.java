@@ -29,4 +29,17 @@ public class Model {
     public String getLastName(){
       return lName;
    }  
+    public void setUserName(String fName){
+      this.Username = Username; 
+   }
+    public String getUserName(){
+       return Username;
+   }
+    public void setPassword(String fName){
+      this.Password = Password; 
+   } 
+    public String getPassword(){
+       return Password;
+   }
+    
 }
