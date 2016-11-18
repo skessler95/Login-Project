@@ -10,5 +10,23 @@ package login;
  * @author Steven
  */
 public class Model {
-    
+    private String fName;
+    private String lName;
+    private String Username;
+    private String Password;
+    Model(){
+        
+    }
+   public void setFirstName(String fName){
+      this.fName = fName; 
+   }
+   public String getFirstName(){
+       return fName;
+   }
+    public void setLastName(String lName){
+      this.lName = lName; 
+   }
+    public String getLastName(){
+      return lName;
+   }  
 }
