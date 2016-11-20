@@ -29,13 +29,13 @@ public class Model {
     public String getLastName(){
       return lName;
    }  
-    public void setUserName(String fName){
+    public void setUserName(String Username){
       this.Username = Username; 
    }
     public String getUserName(){
        return Username;
    }
-    public void setPassword(String fName){
+    public void setPassword(String Password){
       this.Password = Password; 
    } 
     public String getPassword(){
