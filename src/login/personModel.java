@@ -9,12 +9,12 @@ package login;
  *
  * @author Steven
  */
-public class Model {
+public class personModel {
     private String fName;
     private String lName;
     private String Username;
     private String Password;
-    Model(){
+    personModel(){
         
     }
    public void setFirstName(String fName){
@@ -28,7 +28,7 @@ public class Model {
    }
     public String getLastName(){
       return lName;
-   }  
+   }
     public void setUserName(String Username){
       this.Username = Username; 
    }

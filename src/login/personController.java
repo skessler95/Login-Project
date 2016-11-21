@@ -9,6 +9,6 @@ package login;
  *
  * @author Steven
  */
-public class Controller {
+public class personController {
     
 }
