@@ -15,7 +15,11 @@ public class Login {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        personModel model = new personModel();
+        personView view = new personView(model);
+        personController controller = new personController(model, view);
+      
+        view.setVisible(true);
     }
     
 }

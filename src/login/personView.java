@@ -6,6 +6,8 @@
 package login;
 
 //import java.awt.GridLayout;
+import java.awt.Dimension;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -19,6 +21,7 @@ import javax.swing.JTextField;
  * @author Steven
  */
 public class personView extends JFrame implements ActionListener{
+  
   JLabel firstName;
   JTextField fName;
   JLabel lastName;
@@ -39,30 +42,34 @@ public class personView extends JFrame implements ActionListener{
         
         people = new personModel();
         
-       //GridLayout grid = new GridLayout(5,10);
-       //setLayout(grid);
-        firstName = new JLabel("First Name: ");
-        add(firstName);
+       GridLayout grid = new GridLayout(5,10);
+       setLayout(grid);
         
-        fName = new JTextField(" ");
+        firstName = new JLabel("First Name: ");
+        add(firstName);      
+        
+        fName = new JTextField("          ");
+        //Still trying to set the length of the textbox
+        //Current command doesn't work
+        //fName.setSize(new Dimension(10,3));
         add(fName);
         
         lastName = new JLabel("Last Name: ");
-        add(lastName);
+        add(lastName);      
         
-        lName = new JTextField(" ");
+        lName = new JTextField("          ");
         add(lName);
         
-        username = new JLabel("Username: ");
-        add(username);
+        username = new JLabel("UserName: ");
+        add(username);   
         
-        Username = new JTextField(" ");
+        Username = new JTextField("          ");
         add(Username);
         
         password = new JLabel("Password: ");
-        add(password);
+        add(password);      
         
-        Password = new JTextField(" ");
+        Password = new JTextField("          ");
         add(Password);
         
         saveButton = new JButton("Submit");
@@ -73,8 +80,14 @@ public class personView extends JFrame implements ActionListener{
         add(outputLabel);        
         
         JPanel content = new JPanel();
+        content.add(firstName);
         content.add(fName);
+        content.add(lastName);
         content.add(lName);
+        content.add(username);
+        content.add(Username);
+        content.add(password);
+        content.add(Password);
         content.add(saveButton);
         content.add(outputLabel);
         this.setContentPane(content);
@@ -107,14 +120,14 @@ public class personView extends JFrame implements ActionListener{
     public String getLastName(){
        return lName.getText();   
     }
-    public JButton getsaveButton(){
-        return saveButton;
-    }
     public String getUserName(){
         return Username.getText();
     }
     public String getPassword(){
         return Password.getText();
+    }
+    public JButton getsaveButton(){
+        return saveButton;
     }
     
 
@@ -128,5 +141,6 @@ public class personView extends JFrame implements ActionListener{
        people.setPassword(Password.getText());
        outputLabel.setText("Account created");
        } 
+       
     }
 }
