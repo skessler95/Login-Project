@@ -79,7 +79,8 @@ public class personView extends JFrame implements ActionListener{
         content.add(outputLabel);
         this.setContentPane(content);
         this.pack();
-        this.setTitle("Find Person");
+        this.setTitle("Login");
+        setSize(700,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                  
     }
   
@@ -94,6 +95,12 @@ public class personView extends JFrame implements ActionListener{
     public void setLastName(String newlastName){
         lName.setText(newlastName); 
     }
+    public void setUserName(String newUserName){
+        Username.setText(newUserName);
+    }
+    public void setPassword(String newPassword){
+        Password.setText(newPassword);
+    }
     public String getFirstName(){
        return fName.getText();   
     }
@@ -103,6 +110,12 @@ public class personView extends JFrame implements ActionListener{
     public JButton getsaveButton(){
         return saveButton;
     }
+    public String getUserName(){
+        return Username.getText();
+    }
+    public String getPassword(){
+        return Password.getText();
+    }
     
 
     @Override
@@ -111,6 +124,8 @@ public class personView extends JFrame implements ActionListener{
        if(eventsource == saveButton){
        people.setFirstName(fName.getText());
        people.setLastName(lName.getText());
+       people.setUserName(Username.getText());
+       people.setPassword(Password.getText());
        outputLabel.setText("Account created");
        } 
     }
