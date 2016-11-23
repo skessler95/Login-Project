@@ -92,7 +92,7 @@ public class personView extends JFrame implements ActionListener{
         content.add(outputLabel);
         this.setContentPane(content);
         this.pack();
-        this.setTitle("Login");
+        this.setTitle("Login Create Account");
         setSize(700,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                  
     }
