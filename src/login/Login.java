@@ -15,9 +15,9 @@ public class Login {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        personModel model = new personModel();
-        personView view = new personView(model);
-        personController controller = new personController(model, view);
+        Model model = new Model();
+        View view = new View(model);
+        Controller controller = new Controller(model, view);
       
         view.setVisible(true);
     }

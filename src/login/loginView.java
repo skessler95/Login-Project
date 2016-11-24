@@ -6,7 +6,6 @@
 package login;
 
 //import java.awt.GridLayout;
-import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,7 +19,7 @@ import javax.swing.JTextField;
  *
  * @author Steven
  */
-public class personView extends JFrame implements ActionListener{
+public class loginView extends JFrame implements ActionListener{
   
   JLabel firstName;
   JTextField fName;
@@ -31,16 +30,16 @@ public class personView extends JFrame implements ActionListener{
   JLabel password;
   JTextField Password;
   JButton saveButton;
-  personModel people;
+  loginModel people;
   JLabel outputLabel;
 
    
-   final private personModel model;
+   final private loginModel model;
     
-    personView(personModel model){
+    loginView(loginModel model){
         this.model = model;
         
-        people = new personModel();
+        people = new loginModel();
         
        GridLayout grid = new GridLayout(5,10);
        setLayout(grid);
@@ -93,7 +92,6 @@ public class personView extends JFrame implements ActionListener{
         this.setContentPane(content);
         this.pack();
         this.setTitle("Login Create Account");
-        setSize(700,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                  
     }
   

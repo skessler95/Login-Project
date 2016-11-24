@@ -13,11 +13,11 @@ import javax.swing.JButton;
  *
  * @author Steven
  */
-public class personController {
-    final private personModel model;
-    final private personView view;
+public class loginController {
+    final private loginModel model;
+    final private loginView view;
 
-    personController(personModel model, personView view) {
+    loginController(loginModel model, loginView view) {
         this.model = model;
         this.view = view;
                 

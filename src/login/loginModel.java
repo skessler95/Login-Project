@@ -9,12 +9,12 @@ package login;
  *
  * @author Steven
  */
-public class personModel {
+public class loginModel {
     private String fName;
     private String lName;
     private String Username;
     private String Password;
-    personModel(){
+    loginModel(){
         
     }
    public void setFirstName(String fName){
