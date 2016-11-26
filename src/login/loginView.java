@@ -10,7 +10,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -19,7 +19,7 @@ import javax.swing.JTextField;
  *
  * @author Steven
  */
-public class loginView extends JFrame implements ActionListener{
+public class loginView extends JPanel implements ActionListener{
   
   JLabel firstName;
   JTextField fName;
@@ -34,10 +34,10 @@ public class loginView extends JFrame implements ActionListener{
   JLabel outputLabel;
 
    
-   final private loginModel model;
+   final private loginModel l_model;
     
-    loginView(loginModel model){
-        this.model = model;
+    loginView(loginModel l_model){
+        this.l_model = l_model;
         
         people = new loginModel();
         
@@ -89,34 +89,34 @@ public class loginView extends JFrame implements ActionListener{
         content.add(Password);
         content.add(saveButton);
         content.add(outputLabel);
-        this.setContentPane(content);
-        this.pack();
-        this.setTitle("Login Create Account");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                  
+//        this.setContentPane(content);
+//        this.pack();
+//        this.setTitle("Login Create Account");
+//        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                  
     }
   
     public void addsaveButtonListener(ActionListener al) 
     {    
         saveButton.addActionListener(al);
     }
-    public void setFirstName(String newfirstName)
+    public void setFirstName(String firstName)
     {
-        fName.setText(newfirstName);
+        fName.setText(firstName);
     }
-    public void setLastName(String newlastName){
-        lName.setText(newlastName); 
+    public void setLastName(String lastName){
+        lName.setText(lastName);
     }
-    public void setUserName(String newUserName){
-        Username.setText(newUserName);
+    public void setUserName(String newUsername){
+        Username.setText(newUsername);
     }
     public void setPassword(String newPassword){
         Password.setText(newPassword);
     }
     public String getFirstName(){
-       return fName.getText();   
+       return fName.getText();
     }
     public String getLastName(){
-       return lName.getText();   
+       return lName.getText(); 
     }
     public String getUserName(){
         return Username.getText();

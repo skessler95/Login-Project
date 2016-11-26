@@ -17,8 +17,8 @@ public class NavViewBottomMenuPanel extends JPanel{
     JButton caButton;
     public NavViewBottomMenuPanel(){
     super();
-    loginButton = new JButton("Login");
-    caButton = new JButton("Create Account");
+    loginButton = new JButton("Create Account");
+    caButton = new JButton("Login");
     
     add(loginButton);
     add(caButton);
