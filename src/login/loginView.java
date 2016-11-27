@@ -41,8 +41,8 @@ public class loginView extends JPanel implements ActionListener{
         
         people = new loginModel();
         
-       GridLayout grid = new GridLayout(5,10);
-       setLayout(grid);
+//       GridLayout grid = new GridLayout(5,10);
+//       setLayout(grid);
         
         firstName = new JLabel("First Name: ");
         add(firstName);      
@@ -78,17 +78,17 @@ public class loginView extends JPanel implements ActionListener{
         outputLabel = new JLabel("Please provide required information.");
         add(outputLabel);        
         
-        JPanel content = new JPanel();
-        content.add(firstName);
-        content.add(fName);
-        content.add(lastName);
-        content.add(lName);
-        content.add(username);
-        content.add(Username);
-        content.add(password);
-        content.add(Password);
-        content.add(saveButton);
-        content.add(outputLabel);
+//        JPanel content = new JPanel();
+//        content.add(firstName);
+//        content.add(fName);
+//        content.add(lastName);
+//        content.add(lName);
+//        content.add(username);
+//        content.add(Username);
+//        content.add(password);
+//        content.add(Password);
+//        content.add(saveButton);
+//        content.add(outputLabel);
 //        this.setContentPane(content);
 //        this.pack();
 //        this.setTitle("Login Create Account");
