@@ -139,6 +139,5 @@ public class loginView extends JPanel implements ActionListener{
        people.setPassword(Password.getText());
        outputLabel.setText("Account created");
        } 
-       
     }
 }
