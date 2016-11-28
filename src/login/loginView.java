@@ -140,4 +140,8 @@ public class loginView extends JPanel implements ActionListener{
        outputLabel.setText("Account created");
        } 
     }
+    
+    public void setlength(){
+        
+    }
 }
